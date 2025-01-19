@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> Rutuj</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Now html code for hamburger menu  -->
+     
+    <nav id="hamburger-nav">
+
+        <div class="logo">
+            Rutuj
+        </div>
+        
+        <!-- logo div shows logo -->
+        <div class="hamburger-menu" >
+
+            <!-- hamburger-menu div contains all elements of hamburger menu , what we initially see 3 lines as well as what we when it's clicked -->
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <!-- hamburger-icon div represent's 3 lines icon representing hamburger -->
+                <span></span>
+                <span></span>
+                <span></span>
+                <!-- three spans for 3 lines of hamburger -->
+            </div>
+
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+
+        </div>
+    </nav>
+
+<!-- Next we will try to make profile section containing your picture and information -->
+    
+<section id="profile">
+
+    <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Rutuj Raut profile picture" class="myphoto">
+    </div>
+
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Rutuj Raut</h1>
+        <p class="section__text__p2">Fullstack Developer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                Download CV
+            </button>
+
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+            </button>
+        </div>
+
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/rutujraut/'">
+            <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/rutujraut01'">
+        </div>
+    </div>
+</section>
+
+
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img src="./assets/about-pic.jpg" alt="Profile Picture" class="about-pic">
+        </div>
+
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                    <h3>Core Skills</h3>
+                    <p>Fullstack Developement<br/>Data Structures and Algorithms</p>
+                </div>
+
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="Education Icon" class="icon">
+                    <h3>Education</h3>
+                    <p>B.Tech  <br/> Computer Engineering</p>
+                </div>
+            </div>
+
+            <div>
+                <p>
+                    I am a Computer Science undergraduate at JSPM’s Rajarshi Shahu College of Engineering, Pune, with a CGPA of 9.54. 
+                    Proficient in programming (C, C++, JavaScript), web development, and Data Structures and Algorithms (DSA), 
+                    I have developed interactive projects like the Simon Game and Drum Kit Tool, showcasing expertise in modern UI/UX design, DOM manipulation, and event handling. 
+                    With a strong foundation in problem-solving and a passion for building impactful solutions, I am eager to contribute to innovative technology projects.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+
+</section>
+
+
+<section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="experience-sub-title">
+                    Frontend Developement
+                </h2>
+                <div class="article-container">
+                    <article class="icon">
+                        <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                        <div>
+                            <h3>HTML</h3>
+                            <!-- <p>Experienced</p> -->
+                        </div>
+                    </article>
+                    <article class="icon">
+                        <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                        <div>
+                            <h3>CSS</h3>
+                            <!-- <p>Experienced</p> -->
+                        </div>
+                    </article>
+                    <article class="icon">
+                        <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                        <div>
+                            <h3>Javascript</h3>
+                            <!-- <p>Experienced</p> -->
+                        </div>
+                    </article>
+                    <article class="icon">
+                        <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                        <div>
+                            <h3>BootStrap</h3>
+                            <!-- <p>Experienced</p> -->
+                        </div>
+                    </article>
+                    <article class="icon">
+                        <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                        <div>
+                            <h3>JQuery</h3>
+                            <!-- <p>Experienced</p> -->
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="details-container">
+                <h2 class="experience-sub-title">
+                    Backend Developement
+                </h2>
+                <div class="article-container">
+                    <article class="icon">
+                        <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                        <div>
+                            <h3>Node JS</h3>
+                            <!-- <p>Experienced</p> -->
+                        </div>
+                    </article>
+                    <article class="icon">
+                        <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                        <div>
+                            <h3>Express JS</h3>
+                            <!-- <p>Experienced</p> -->
+                        </div>
+                    </article>
+                    <article class="icon">
+                        <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                        <div>
+                            <h3>MySQL</h3>
+                            <!-- <p>Experienced</p> -->
+                        </div>
+                    </article>
+                    <article class="icon">
+                        <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                        <div>
+                            <h3>EJS</h3>
+                            <!-- <p>Experienced</p> -->
+                        </div>
+                    </article>
+                    <article class="icon">
+                        <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                        <div>
+                            <h3>Git</h3>
+                            <!-- <p>Experienced</p> -->
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">
+                    Software Developement
+                </h2>
+                <div class="article-container">
+                    <article class="icon">
+                        <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                        <div>
+                            <h3>C</h3>
+                            <!-- <p>Experienced</p> -->
+                        </div>
+                    </article>
+                    <article class="icon">
+                        <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                        <div>
+                            <h3>C++</h3>
+                            <!-- <p>Experienced</p> -->
+                        </div>
+                    </article>
+                    <article class="icon">
+                        <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                        <div>
+                            <h3>DSA</h3>
+                            <!-- <p>Experienced</p> -->
+                        </div>
+                    </article>
+                    <article class="icon">
+                        <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                        <div>
+                            <h3>OOPS</h3>
+                            <!-- <p>Experienced</p> -->
+                        </div>
+                    </article>
+                    <article class="icon">
+                        <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                        <div>
+                            <h3>Problem Solving</h3>
+                            <!-- <p>Experienced</p> -->
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">
+</section>
+
+
+<section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Simon Game</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com/RutujRaut01/Color-Memory-Challenge-Simon-Game'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://rutujraut01.github.io/Color-Memory-Challenge-Simon-Game/'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Keyboard Drum-Kit</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com/RutujRaut01/Web-Drum-Kit-Play-Drums-with-Your-Keyboard'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://rutujraut01.github.io/Web-Drum-Kit-Play-Drums-with-Your-Keyboard/'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Portfolio Website</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com/'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href = './#profile'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href = './#contact'">
+
+</section>
+
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon">
+            <p><a href="mailto:rautrutuj123@gmail.com">rautrutuj123@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon">
+            <p><a href="https://www.linkedin.com/in/rutujraut/">LinkedIn</a></p>
+        </div>
+    </div>
+</section>
+
+
+
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+<p>Copyright &#169; 2025 Rutuj Raut All Rights Reserved.</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
